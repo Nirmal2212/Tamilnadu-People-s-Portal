@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dep1</title>
+    <link rel="shortcut icon" href="./tnmap.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./second.css">
+</head>
+
+<body>
+    <header>
+        <img src="./Tamil.png" class="logo" alt="government-logo" width="140">
+        <div class="people-logo">
+            <img src="./people logo.jpeg" alt="people-logo" height="200" width="700">
+        </div>
+    </header>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Select your Constituent</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <select onchange="redirect()">
+                <option><span style="color:white">--SELECT--</span></option>
+                <option>1 Gummidipoondi</option>
+                <option>2 Ponneri</option>
+                <option>3 Tiruttani</option>
+                <option>4 Thiruvallur</option>
+                <option>5 Poonamallee</option>
+                <option>6 Avadi</option>
+                <option>7 Maduravoyal</option>
+                <option>8 Ambattur</option>
+                <option>9 Madavaram</option>
+                <option>10 Thiruvottiyur</option>
+                <option>11 Dr. Radhakrishnan Nagar</option>
+                <option>12 Perambur</option>
+                <option>13 Kolathur</option>
+                <option>14 Villivakkam</option>
+                <option>15 Thiru-Vi-Ka-Nagar</option>
+                <option>16 Egmore</option>
+                <option>17 Royapuram</option>
+                <option>18 Harbour</option>
+                <option>19 Chepauk-Thiruvallikeni</option>
+                <option>20 Thousand Lights</option>
+                <option>21 Anna Nagar</option>
+                <option>22 Virugambakkam</option>
+                <option>23 Saidapet</option>
+                <option>24 Thiyagarayanagar</option>
+                <option>25 Mylapore</option>
+                <option>26 Velachery</option>
+                <option>27 Shozhinganallur</option>
+                <option>28 Alandur</option>
+                <option>29 Sriperumbudur</option>
+                <option>30 Pallavaram</option>
+                <option>31 Tambaram</option>
+                <option>32 Chengalpattu</option>
+                <option>33 Thiruporur</option>
+                <option>34 Cheyyur</option>
+                <option>35 Madurantakam</option>
+                <option>36 Uthiramerur</option>
+                <option>37 Kancheepuram</option>
+                <option>38 Arakkonam</option>
+                <option>39 Sholinghur</option>
+                <option>40 Katpadi</option>
+                <option>41 Ranipet</option>
+                <option>42 Arcot</option>
+                <option>43 Vellore</option>
+                <option>44 Anaikattu</option>
+                <option>45 Kilvaithinankuppam</option>
+                <option>46 Gudiyattam</option>
+                <option>47 Vaniyambadi</option>
+                <option>48 Ambur</option>
+                <option>49 Jolarpet</option>
+                <option>50 Tirupattur</option>
+                <option>51 Uthangarai</option>
+                <option>52 Bargur</option>
+                <option>53 Krishnagiri</option>
+                <option>54 Veppanahalli</option>
+                <option>55 Hosur</option>
+                <option>56 Thalli</option>
+                <option>57 Palacode</option>
+                <option>58 Pennagaram</option>
+                <option>59 Dharmapuri</option>
+                <option>60 Pappireddippatti</option>
+                <option>61 Harur</option>
+                <option>62 Chengam</option>
+                <option>63 Tiruvannamalai</option>
+                <option>64 Kilpennathur</option>
+                <option>65 Kalasapakkam</option>
+                <option>66 Polur</option>
+                <option>67 Arani</option>
+                <option>68 Cheyyar</option>
+                <option>69 Vandavasi</option>
+                <option>70 Gingee</option>
+                <option>71 Mailam</option>
+                <option>72 Tindivanam</option>
+                <option>73 Vanur</option>
+                <option>74 Villupuram</option>
+                <option>75 Vikravandi</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i, option;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            option = div.getElementsByTagName("option");
+            for (i = 0; i < option.length; i++) {
+                txtValue = option[i].textContent || option[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    option[i].style.display = "";
+                } else {
+                    option[i].style.display = "none";
+                }
+            }
+        }
+
+        function redirect() {
+            window.location.href = "third.html";
+        }
+    </script>
+    <footer>
+        <nav class="sponsers">
+            <ul class="sponser">
+                <li><img src="./digital-india.png" class="digi" alt="digi-locker"></li>
+                <li><img src="./nic-logo.png" class="nic" alt="NIC"></li>
+                <li><img src="./meity-logo.png" class="meity" alt="meity"></li>
+                <li><img src="./mygov-logo.png" class="mygov" alt="mygov"></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

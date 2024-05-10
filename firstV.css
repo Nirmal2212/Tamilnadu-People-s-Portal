@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #003638;
+}
+
+/* GOVERNMENT LOGO */
+.logo {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px; /* Adjusted margin */
+}
+
+/* buttons */
+nav {
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.y1 {
+  padding: 12px 30px; /* Adjusted padding */
+  background: #003638;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease 0s;
+  margin: 0 10px; /* Adjusted margin */
+}
+
+.y2 {
+  padding: 12px 30px; /* Adjusted padding */
+  background: #003638;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease 0s;
+  margin: 0 10px; /* Adjusted margin */
+}
+
+.y3 {
+  padding: 12px 30px; /* Adjusted padding */
+  background: #003638;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease 0s;
+  margin: 0 10px; /* Adjusted margin */
+}
+
+/* home button */
+.contact {
+  padding: 12px 30px; /* Adjusted padding */
+  background: green;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease 0s;
+  margin: 0 10px; /* Adjusted margin */
+}
+
+.y1:hover,
+.y2:hover,
+.y3:hover {
+  background-color: #f2a182;
+}
+
+.contact:hover {
+  background-color: rgba(0, 137, 169, 0.8);
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+.people-logo {
+  margin-top: auto; /* Align to the bottom */
+  margin-right: 225px; /* Adjusted margin */
+}
+
+/* login */
+.log {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto; /* Adjusted width */
+  transition: all 0.5 ease 0;
+  position: absolute; /* Positioning */
+  top: 60%; /* Move it down to the middle vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  display: block; /* Ensure it's block-level */
+}
+
+
+.log:hover {
+  background-color: grey;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  background:white; 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  z-index:2; 
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+#birthday {
+  padding: 15px 40px;
+} 
+
+.submit {
+  padding: 12px 30px; /* Adjusted padding */
+  background: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease 0s;
+  margin: 0 10px; /* Adjusted margin */
+}
+
+.submit:hover {
+  background-color: lightsalmon;
+}
+
+/* Position sponsers section at the bottom */
+.sponsers {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003638;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.sponsers ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px; /* Adjusted margin */
+}
+
+.sponsers ul li {
+  margin: 0 10px; /* Adjusted margin */
+}
+
+/* contact us button */
+.contactbox {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+#footer {
+  color: yellow;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNP Portal</title>
+
+    <link rel="shortcut icon" href="./tnmap.jpg" type="image/x-icon">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&display=swap" />
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="./firstV.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--header  -->
+        <header>
+
+            <img src="./Tamil.png" class="logo" alt="government-logo" width="140">
+            <div class="people-logo">
+                <img src="./people logo.jpeg" alt="people-logo" height="200" width="700">
+            </div>
+
+        </header>
+        <nav>
+            <ul>
+                <li><button class="y1"><a href="/Home">Home</a></button></li>
+                <li><button class="y2"><a href="/about">About</a></button></li>
+                <li><button class="y3"><a href="/proposal">proposal</a></button></li>
+                <li><button class="contact" onclick="document.getElementById('form1').style.display='block'"
+                        style="width:auto;"><i class="fa fa-envelope-o"></i> Contact us </button></li>
+                <div class="modal" id="form1">
+                    <!-- action="/action.php" -->
+                    <form method="post">
+                        <div>
+                            <span onclick="document.getElementById('form1').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                        </div>
+
+                        <span style="color:red"><label for="fname">First Name</label></span>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+                        <span style="color:red"><label for="lname">Last Name</label></span>
+                        <input type="text" id="lname" name="lastname" placeholder="Your initial">
+
+                        <span style="color:red"><label for="country">Mobile Number</label></span>
+                        <input type="text" id="Mobile Number" placeholder="Mobile Number">
+
+                        <span style="color:red"><label for="subject">Subject</label></span>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Login button -->
+    <button class="log" onclick="document.getElementById('id01').style.display='block'"
+        style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="./dep1.html" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="./avatar.jpeg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>AADHAR CARD NUMBER :</b></label>
+                <input type="text" placeholder="16-DIGIT-NUMBER" name="uname" required>
+
+                <label for="birthday"><b>DATE OF BIRTH:</b></label><br><br>
+                <input type="date" id="birthday" name="DOB"><br><br>
+                <!-- <form method="POST" action="second.html"> -->
+                <button class="submit" type="submit">SUBMIT</button><br><br>
+                <!-- </form>  -->
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <!-- <span class="psw"><a href="#">Forgot password?</a></span> -->
+            </div>
+        </form>
+    </div>
+
+    <footer
+    >
+        <nav class="sponsers">
+            <ul class="sponser">
+                <li><img src="./digital-india.png" class="digi" alt="digi-locker"></li>
+                <li><img src="./nic-logo.png" class="nic" alt="NIC"></li>
+                <li><img src="./meity-logo.png" class="meity" alt="meity"></li>
+                <li><img src="./mygov-logo.png" class="mygov" alt="mygov"></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
+
+
+
+<!-- <div class="combo">
+        <label for="cars"><span style="color:#f2a182">SELECT YOUR CONSTITUENCY :   </span></label><br><br>
+        <select name="cars" id="cars" color="white" >
+            <option ><span style="color:white">--SELECT--</span></option>
+            <option >1 Gummidipoondi</option>
+            <option >2 Ponneri</option>
+            <option >3 Tiruttani</option>
+            <option >4 Thiruvallur</option>
+            <option ></option>
+        </select>
+    </div> -->
